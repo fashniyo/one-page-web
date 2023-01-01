@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
-import { animateScroll as scroll } from "react-scroll";
-import { IconContext } from "react-icons/lib";
+import React, { useState, useEffect } from 'react'
+import { FaBars } from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll'
+import { IconContext } from 'react-icons/lib'
 import {
   Nav,
   NavbarContainer,
@@ -10,36 +10,36 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
-} from "./NavbarElements";
+  // NavBtn,
+  // NavBtnLink,
+} from './NavbarElements'
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
-      setScrollNav(true);
+      setScrollNav(true)
     } else {
-      setScrollNav(false);
+      setScrollNav(false)
     }
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, []);
+    window.addEventListener('scroll', changeNav)
+  }, [])
 
   const toggleHome = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              dolla
+              Ola👀😎
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -54,7 +54,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  About
+                  Welcome/About
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -66,7 +66,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Discover
+                  Discover/Github
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -78,7 +78,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Services
+                  Service/Details
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -90,18 +90,18 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Sign Up
+                  Sign Up/LinkedIn
                 </NavLinks>
               </NavItem>
             </NavMenu>
-            <NavBtn>
+            {/* <NavBtn>
               <NavBtnLink to="/signin">Sign In</NavBtnLink>
-            </NavBtn>
+            </NavBtn> */}
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
