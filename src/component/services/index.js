@@ -9,7 +9,7 @@ import {
   ServicesH2,
   ServicesWrapper,
   ServicesIcon,
-  ServicesP,
+  // ServicesP,
 } from './servicesElements'
 
 const Services = () => {

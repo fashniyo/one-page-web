@@ -58,7 +58,7 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
   display: flex;
-  align-item: center;
+  align-items: center;
   list-style: none;
   text-align: center;
   margin-right: -22px;
@@ -104,11 +104,11 @@ export const NavBtnLink = styled(LinkR)`
   outline: none;
   border: none;
   cursor: pointer;
-  transistion: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
 
   &:hover {
-    transistion: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
   }
