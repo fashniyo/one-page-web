@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   min-height: 692px;
@@ -15,7 +15,7 @@ export const Container = styled.div`
     rgba(1, 147, 86, 1) 0%,
     rgba(10, 201, 122, 1) 100%
   );
-`;
+`
 
 export const FormWrap = styled.div`
   height: 100%;
@@ -26,7 +26,7 @@ export const FormWrap = styled.div`
   @media screen and (max-width: 408px) {
     height: 80%;
   }
-`;
+`
 
 export const Icon = styled(Link)`
   margin-left: 32px;
@@ -40,7 +40,7 @@ export const Icon = styled(Link)`
     margin-left: 16px;
     margin-top: 8px;
   }
-`;
+`
 
 export const FormContent = styled.div`
   height: 100%;
@@ -51,7 +51,7 @@ export const FormContent = styled.div`
   @media screen and (max-width: 480px) {
     padding: 10px;
   }
-`;
+`
 
 export const Form = styled.form`
   background: #010101;
@@ -68,7 +68,7 @@ export const Form = styled.form`
   @media screen and (max-width: 400px) {
     padding: 32px 32px;
   }
-`;
+`
 
 export const FormH1 = styled.h1`
   margin-bottom: 40px;
@@ -76,20 +76,20 @@ export const FormH1 = styled.h1`
   font-size: 20px;
   font-weight: 400;
   text-align: center;
-`;
+`
 
 export const FormLabel = styled.label`
   margin-bottom: 8px;
   color: #fff;
   font-size: 14px;
-`;
+`
 
 export const FormInput = styled.input`
   margin-bottom: 32px;
   padding: 16px 16px;
   border-radius: 4px;
   border: none;
-`;
+`
 
 export const FormBTN = styled.button`
   background: #01bf71;
@@ -99,11 +99,11 @@ export const FormBTN = styled.button`
   color: #fff;
   font-size: 16px;
   cursor: pointer;
-`;
+`
 
 export const Text = styled.span`
   text-align: center;
   margin-top: 24px;
   color: #fff;
   font-size: 14px;
-`;
+`

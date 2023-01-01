@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
+import React, { useState } from 'react'
+import Video from '../../videos/video.mp4'
 import {
   HeroContainer,
   HeroBg,
@@ -10,15 +10,15 @@ import {
   HeroBTNWraper,
   ArrowForward,
   ArrowRight,
-} from "./heroElements";
-import { Button } from "../buttonElements";
+} from './heroElements'
+import { Button } from '../buttonElements'
 
 const HeroSection = () => {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState(false)
 
   const onHover = () => {
-    setHover(!hover);
-  };
+    setHover(!hover)
+  }
 
   return (
     <HeroContainer id="home">
@@ -27,10 +27,12 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroH1>Olaniyi Fashola</HeroH1>
         <HeroP>
           Sign Up for new account and recceive 2000 dolksn payment towards your
           nex payment
         </HeroP>
+        <HeroP>Citation</HeroP>
         <HeroBTNWraper>
           <Button
             to="signup"
@@ -44,12 +46,12 @@ const HeroSection = () => {
             exact="true"
             offset={-80}
           >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+            Get Started/Github {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBTNWraper>
       </HeroContent>
     </HeroContainer>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

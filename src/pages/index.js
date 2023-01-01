@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import Footer from "../component/footer";
-import HeroSection from "../component/heroSection";
-import InfoSection from "../component/infoSection";
+import React, { useState } from 'react'
+import Footer from '../component/footer'
+import HeroSection from '../component/heroSection'
+import InfoSection from '../component/infoSection'
 import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
-} from "../component/infoSection/data";
-import Navbar from "../component/navbar";
-import Services from "../component/services";
-import Sidebar from "../component/sidebar";
+} from '../component/infoSection/data'
+import Navbar from '../component/navbar'
+import Services from '../component/services'
+import Sidebar from '../component/sidebar'
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   return (
     <>
@@ -29,7 +29,7 @@ const Home = () => {
       <InfoSection {...homeObjThree} />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
