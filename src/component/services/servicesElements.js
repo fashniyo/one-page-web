@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ServicesContainer = styled.div`
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +35,7 @@ export const ServicesWrapper = styled.div`
     padding: 0 20px;
   }
 `
-export const ServicesCard = styled.div`
+export const ServicesCard = styled.a`
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -46,6 +46,8 @@ export const ServicesCard = styled.div`
   padding: 30px;
   box-shadow: 0 1px 3px rgba (0, 0, 0, 2);
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: black;
 
   &:hover {
     transform: scale(1.02);

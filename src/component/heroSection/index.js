@@ -26,16 +26,22 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        {/* <HeroH1>Virtual Ban</HeroH1> */}
         <HeroH1>Olaniyi Fashola</HeroH1>
-        <HeroP>
+        {/* <HeroP>
           Sign Up for new account and recceive 2000 dolksn payment towards your
           nex payment
+        </HeroP> */}
+        <HeroP>
+          Fashola Olaniyi is a Graphics Designer, Brand Strategist and Software
+          Developer.
         </HeroP>
-        <HeroP>Citation</HeroP>
         <HeroBTNWraper>
           <Button
-            to="signup"
+            // to="signup"
+            href="https://github.com/fashniyo"
+            target="_blank"
+            aria-label="Github"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
@@ -46,7 +52,7 @@ const HeroSection = () => {
             exact="true"
             offset={-80}
           >
-            Get Started/Github {hover ? <ArrowForward /> : <ArrowRight />}
+            Github {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBTNWraper>
       </HeroContent>
