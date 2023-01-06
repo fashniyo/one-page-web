@@ -1,37 +1,39 @@
-import React from "react";
+import React from 'react'
 import {
-  FaFacebook,
+  // FaFacebook,
   FaInstagram,
   FaLinkedin,
+  // FaHiMail,
   FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
-import { animateScroll as scroll } from "react-scroll";
+  // FaYoutube,
+} from 'react-icons/fa'
+import { HiMail } from 'react-icons/hi'
+import { animateScroll as scroll } from 'react-scroll'
 import {
   FooterCOntainer,
   FooterWrap,
-  FooterLink,
-  FooterLinkItems,
-  FooterLinkTitle,
-  FooterLinksContainer,
-  FooterLinkWrapper,
+  // FooterLink,
+  // FooterLinkItems,
+  // FooterLinkTitle,
+  // FooterLinksContainer,
+  // FooterLinkWrapper,
   SocialMedia,
   SocialIcon,
   SocialIconLink,
   SocialLogo,
   SocialMediaWrap,
   WebsiteRight,
-} from "./footerElements";
+} from './footerElements'
 
 const Footer = () => {
   const toggleHome = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
 
   return (
     <FooterCOntainer>
       <FooterWrap>
-        <FooterLinksContainer>
+        {/* <FooterLinksContainer>
           <FooterLinkWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
@@ -68,37 +70,56 @@ const Footer = () => {
               <FooterLink to="/">Terms of Service</FooterLink>
             </FooterLinkItems>
           </FooterLinkWrapper>
-        </FooterLinksContainer>
+        </FooterLinksContainer> */}
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
-              Dolla
+              Ola👀😎
             </SocialLogo>
             <WebsiteRight>
-              dolla © {new Date().getFullYear()} All rights reserved
+              fashniyo © {new Date().getFullYear()} All rights reserved
             </WebsiteRight>
             <SocialIcon>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              {/* <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              </SocialIconLink> */}
+              <SocialIconLink
+                href="https://www.instagram.com/fashniyo/"
+                target="_blank"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Youtube">
+              {/* <SocialIconLink href="/" target="_blank" aria-label="Youtube">
                 <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+              </SocialIconLink> */}
+              <SocialIconLink
+                href="https://twitter.com/fashniyo"
+                target="_blank"
+                aria-label="Twitter"
+              >
                 <FaTwitter />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+              <SocialIconLink
+                href="https://www.linkedin.com/in/olaniyi-fashola-6b5790181/"
+                target="_blank"
+                aria-label="Linkedin"
+              >
                 <FaLinkedin />
+              </SocialIconLink>
+              <SocialIconLink
+                href="mailto: olaniyifashola14@gmail.com"
+                target="_blank"
+                aria-label="Email"
+              >
+                <HiMail />
               </SocialIconLink>
             </SocialIcon>
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>
     </FooterCOntainer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

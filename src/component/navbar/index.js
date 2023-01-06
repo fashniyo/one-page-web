@@ -45,7 +45,7 @@ const Navbar = ({ toggle }) => {
               <FaBars />
             </MobileIcon>
             <NavMenu>
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks
                   to="about"
                   smooth={true}
@@ -54,9 +54,9 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Welcome/About
+                  About
                 </NavLinks>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLinks
                   to="discover"
@@ -66,7 +66,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Discover/Github
+                  Github
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -78,7 +78,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Service/Details
+                  Details
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -90,7 +90,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Sign Up/LinkedIn
+                  LinkedIn
                 </NavLinks>
               </NavItem>
             </NavMenu>
